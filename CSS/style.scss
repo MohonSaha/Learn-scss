@@ -1,3 +1,7 @@
+//  Allways use this syntax at the top of the file for use variables. 
+
+@use 'variables';
+
 
 // Topic-1 SCSS Variables : 
 
@@ -66,3 +70,11 @@ button{
 }
 
 
+// Topic-4 SCSS Variables 
+
+
+
+.variables{
+    font-weight: 800;
+    font-size: variables.$large-fonts;
+}

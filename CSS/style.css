@@ -39,4 +39,9 @@ button:hover {
 
 .error {
   background-color: rgb(224, 9, 48);
+}
+
+.variables {
+  font-weight: 800;
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */
