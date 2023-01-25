@@ -1,5 +1,42 @@
-p {
-  background-color: red;
+.variables-test {
   border: 2px solid green;
-  font-size: 50px;
+  padding: 8px 12px;
+}
+
+nav ul {
+  border: 3px solid purple;
+}
+nav ul li {
+  color: green;
+}
+nav ul li a {
+  color: green;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+}
+button:hover {
+  background: #000;
+}
+
+.error, .success, .text {
+  background-color: brown;
+  color: whitesmoke;
+  padding: 8px 12px;
+  width: 140px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: rgb(224, 9, 48);
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,68 @@
-@use 'variables';
 
+// Topic-1 SCSS Variables : 
 
-p{
-    background-color: red;
-    border: 2px solid green;
-    font-size: variables.$large-fonts;
+$primary-color: green;
+$secondary-color: purple;
+$primary-padding: 8px 12px;
+
+.variables-test{
+    border: 2px solid $primary-color;
+    padding: $primary-padding;
 }
+
+
+// Topic-2 SCSS Nesting :
+
+nav{
+    ul{
+        border: 3px solid $secondary-color;
+        
+        li{
+            color: $primary-color;
+
+            a{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+button{
+    background-color: purple;
+    color: white;
+    padding: $primary-padding;
+    border-radius: 8px;
+    border: none;
+
+    &:hover{
+        background: #000;
+    }
+}
+
+
+// Topic-3 SCSS Extend 
+
+%message{
+    background-color: brown;
+    color: whitesmoke;
+    padding: $primary-padding;
+    width: 140px;
+    border-radius: 10px;
+    text-align: center
+}
+
+.text{
+    @extend %message;
+}
+
+.success{
+    @extend %message;
+    background-color: green;
+}
+
+.error{
+    @extend %message;
+    background-color: rgb(224, 9, 48);
+}
+
+
